@@ -57,6 +57,7 @@ use Illuminate\Foundation\Console\ExceptionMakeCommand;
 use Illuminate\Foundation\Console\InterfaceMakeCommand;
 use Illuminate\Foundation\Console\JobMakeCommand;
 use Illuminate\Foundation\Console\JobMiddlewareMakeCommand;
+use Illuminate\Foundation\Console\JobRunCommand;
 use Illuminate\Foundation\Console\KeyGenerateCommand;
 use Illuminate\Foundation\Console\LangPublishCommand;
 use Illuminate\Foundation\Console\ListenerMakeCommand;
@@ -201,6 +202,7 @@ class ArtisanServiceProvider extends ServiceProvider implements DeferrableProvid
         'InterfaceMake' => InterfaceMakeCommand::class,
         'JobMake' => JobMakeCommand::class,
         'JobMiddlewareMake' => JobMiddlewareMakeCommand::class,
+        'JobRun' => JobRunCommand::class,
         'LangPublish' => LangPublishCommand::class,
         'ListenerMake' => ListenerMakeCommand::class,
         'MailMake' => MailMakeCommand::class,
